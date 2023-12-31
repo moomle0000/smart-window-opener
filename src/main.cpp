@@ -325,6 +325,7 @@ void sendstautus()
   // Add data to the JSON document
   doc["sensor"] = "temperature";
   doc["value"] = dht.readTemperature();
+  doc['windowmode'] = isSwitchOn;
 
   // Convert the JSON document to a string
   String jsonString;
